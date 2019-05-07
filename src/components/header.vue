@@ -1,5 +1,7 @@
 <template>
-    <div>这是头部</div>
+    <div class="clearfix">
+        <div class="header-right fr">tadpole</div>
+    </div>
 </template>
 
 <script>
@@ -12,4 +14,11 @@ export default {
 }
 </script>
 
-<style scope></style>
+<style scope lang="scss">
+.header-right {
+    height: 60px;
+    line-height: 60px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+</style>

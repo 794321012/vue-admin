@@ -2,6 +2,7 @@
     <div>
         <app-header></app-header>
         <app-nav></app-nav>
+        <router-view />
         <app-footer></app-footer>
     </div>
 </template>
@@ -25,4 +26,4 @@ export default {
 }
 </script>
 
-<style scope></style>
+<style scope lang="scss"></style>

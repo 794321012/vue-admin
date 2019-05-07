@@ -8,7 +8,17 @@ export default new Router({
         {
             path: '/',
             component: () => import('@/components/home'),
-            children: []
+            redirect: '/index',
+            children: [
+                {
+                    path: '/index',
+                    component: () => import('@/views/index')
+                }
+            ]
+        },
+        {
+            path: '/login',
+            component: () => import('@/views/login')
         }
     ]
 })

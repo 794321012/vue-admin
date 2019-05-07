@@ -10,8 +10,8 @@ module.exports = {
     },
     extends: ['plugin:vue/essential', 'eslint:recommended', '@vue/prettier'],
     rules: {
-        'no-console': 2, //不允许出现console语句
-        'no-debugger': 2, //不允许出现debugger语句
+        'no-console': 1, //不允许出现console语句
+        'no-debugger': 1, //不允许出现debugger语句
         'no-dupe-args': 2, //函数定义的时候不允许出现重复的参数
         'no-dupe-keys': 2, //对象中不允许出现重复的键
         'no-duplicate-case': 2, //switch语句中不允许出现重复的case标签
