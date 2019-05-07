@@ -1,5 +1,5 @@
 <template>
-    <div></div>
+    <div>这是导航</div>
 </template>
 
 <script>
