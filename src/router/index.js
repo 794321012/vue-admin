@@ -3,11 +3,13 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+import Layout from '@/views/layout'
+
 export default new Router({
     routes: [
         {
             path: '/',
-            component: () => import('@/components/home'),
+            component: Layout,
             redirect: '/index',
             children: [
                 {

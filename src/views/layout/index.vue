@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import appHeader from './header.vue'
-import appFooter from './footer.vue'
-import appNav from './nav.vue'
+import appHeader from '@/components/header.vue'
+import appFooter from '@/components/footer.vue'
+import appNav from '@/components/nav.vue'
 export default {
-    name: 'home',
+    name: 'layout',
     components: {
         appHeader,
         appFooter,
