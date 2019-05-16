@@ -1,29 +1,6 @@
-# vue-admin
+## vue-admin
 
-## Project setup
-```
-npm install
-```
+一个基于 `vue + vue-router + vuex + element-ui` 的后台管理模板
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
