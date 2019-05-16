@@ -1,5 +1,6 @@
 <template>
-    <div class="clearfix">
+    <div class="clearfix app-header">
+        <div class="el-icon-menu menu" @click="toggleMenu"></div>
         <div class="header-right fr">tadpole</div>
     </div>
 </template>
@@ -10,15 +11,27 @@ export default {
         return {
             test: 0
         }
+    },
+    methods: {
+        toggleMenu() {
+            this.$store.dispatch('toggle')
+        }
     }
 }
 </script>
 
 <style scope lang="scss">
-.header-right {
+.app-header {
     height: 60px;
     line-height: 60px;
-    padding-right: 25px;
-    cursor: pointer;
+    .header-right {
+        padding-right: 25px;
+        cursor: pointer;
+    }
+    .menu {
+        font-size: 20px;
+        color: #666;
+        cursor: pointer;
+    }
 }
 </style>

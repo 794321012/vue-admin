@@ -8,6 +8,7 @@
             background-color="#545c64"
             text-color="#fff"
             active-text-color="#ffd04b"
+            :collapse="isCollapse"
         >
             <el-menu-item index="1">
                 <i class="el-icon-menu"></i>
@@ -32,15 +33,26 @@
 <script>
 export default {
     data() {
-        return {
-            test: 0
-        }
+        return {}
     },
     methods: {
         handleOpen() {},
         handleClose() {}
+    },
+    computed: {
+        isCollapse() {
+            return this.$store.state.isCollapse
+        }
     }
 }
 </script>
 
-<style scope lang="scss"></style>
+<style scope lang="scss">
+.el-menu-vertical-demo {
+    height: 100vh;
+}
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+    width: 170px;
+    height: 100vh;
+}
+</style>

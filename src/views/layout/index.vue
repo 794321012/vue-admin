@@ -1,21 +1,24 @@
 <template>
-    <div>
-        <app-header></app-header>
-        <app-nav></app-nav>
-        <router-view />
-        <app-footer></app-footer>
+    <div class="layout">
+        <div class="app-nav">
+            <app-nav></app-nav>
+        </div>
+        <div class="app-other">
+            <app-header></app-header>
+            <div class="content">
+                <router-view />
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 import appHeader from '@/components/header.vue'
-import appFooter from '@/components/footer.vue'
 import appNav from '@/components/nav.vue'
 export default {
     name: 'layout',
     components: {
         appHeader,
-        appFooter,
         appNav
     },
     data() {
@@ -26,4 +29,13 @@ export default {
 }
 </script>
 
-<style scope lang="scss"></style>
+<style scope lang="scss">
+.layout {
+    display: flex;
+    .app-other {
+        flex: auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
+</style>
